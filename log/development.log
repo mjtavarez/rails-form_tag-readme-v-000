@@ -469,3 +469,43 @@ Processing by PostsController#index as HTML
   [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
   Rendered posts/index.html.erb within layouts/application (1.8ms)
 Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for 108.14.229.152 at 2017-05-22 03:21:59 +0000
+Cannot render console from 108.14.229.152! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 14ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 108.14.229.152 at 2017-05-22 03:22:04 +0000
+Cannot render console from 108.14.229.152! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0Pp/4UM8kFiWFIjS8qiEwUxu+Q2ZQjXFJ4MKs6fSDPnA8ED56oYKSrL6FSYoLt94XdEve5Z3LkWIvywH+sIK0Q==", "post"=>{"title"=>"a", "description"=>"sss"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "a"], ["description", "sss"], ["created_at", "2017-05-22 03:22:04.846362"], ["updated_at", "2017-05-22 03:22:04.846362"]]
+  [1m[35m (10.6ms)[0m  commit transaction
+Redirected to https://rails-form-tag-readme-v-000-mjwrqs.c9users.io/posts
+Completed 302 Found in 15ms (ActiveRecord: 11.1ms)
+
+
+Started GET "/posts" for 108.14.229.152 at 2017-05-22 03:22:04 +0000
+Cannot render console from 108.14.229.152! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for 108.14.229.152 at 2017-05-22 03:22:13 +0000
+Cannot render console from 108.14.229.152! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 108.14.229.152 at 2017-05-22 03:23:31 +0000
+Cannot render console from 108.14.229.152! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
